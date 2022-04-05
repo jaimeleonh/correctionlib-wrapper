@@ -1,6 +1,5 @@
-// #include "correction.h"
+#include "correction.h"
 #include <math.h> 
-#include "/afs/cern.ch/work/j/jleonhol/private/nanoaod_test/correctionlib/include/correction.h"
 
 class MyCorrections {
   public:
