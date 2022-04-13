@@ -16,6 +16,11 @@ double MyCorrections::eval(
 }
 
 double MyCorrections::eval(
+    double double1, double double2, std::string str1, std::string str2) {
+  return SF_->evaluate({double1, double2, str1, str2});  
+}
+
+double MyCorrections::eval(
     double double1, int int1, int int2, std::string str1, std::string str2, std::string str3) {
   return SF_->evaluate({double1, int1, int2, str1, str2, str3});  
 }
