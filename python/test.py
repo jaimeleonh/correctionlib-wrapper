@@ -16,4 +16,4 @@ ROOT.gInterpreter.ProcessLine('auto corr = MyCorrections("%s", "%s");' % (filena
 eta = 1.2
 pt = 240.
 
-ROOT.gInterpreter.ProcessLine('corr.eval("central", "M", 5, abs(%s), %s)'% (eta, pt))
+ROOT.gInterpreter.ProcessLine('corr.eval({"central", "M", 5, abs(%s), %s})'% (eta, pt))

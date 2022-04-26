@@ -1,20 +1,16 @@
+#ifndef Corrections_Wrapper_custom_sf_
+#define Corrections_Wrapper_custom_sf_
+
 #include "correction.h"
 #include <math.h> 
 
 class MyCorrections {
   public:
-    MyCorrections(std::string filename, std::string correction_name);
-    double eval(std::string str1, std::string str2, int int1, double double1, double double2);
-    double eval(double double1, int int1, std::string str1, std::string str2);
-    double eval(double double1, double double2, std::string str1, std::string str2);
-    double eval(
-        double double1, int int1, int int2, std::string str1, std::string str2, std::string str3);
-    double eval(
-        double double1, double double2, int int1, int int2, std::string str1, std::string str2);
-    double eval(
-        double double1, int int1, std::string str1,
-        std::string str2, std::string str3, std::string str4);
+    MyCorrections(std::string filename, std::string correction_name);  
+    double eval(const std::vector<correction::Variable::Type>& values);
 
   private:
     correction::Correction::Ref SF_;
 };
+
+#endif

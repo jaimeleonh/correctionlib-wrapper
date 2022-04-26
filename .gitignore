@@ -1,2 +1,4 @@
 *.pdf
 *.root
+__init__.py
+__pycache__
